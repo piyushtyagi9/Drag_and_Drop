@@ -1,0 +1,49 @@
+table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 70%;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    position: relative;
+    cursor: pointer;
+}
+
+.box {
+    width: 50%;
+    height: 80px;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    cursor: pointer;
+    transition: opacity 0.3s ease; /* Fade effect */
+}
+
+.add-row{
+    border: 5px solid;
+    margin-left: 25%;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 5px; 
+    background-color: green;
+  }
+  
+  .undo{
+    border: 5px solid;
+    width: 50%;
+    padding: 10px;
+    margin-left: 25%;
+    margin-bottom: 10px;
+    background-color: blue;
+  }
+
+  .hide{
+    display: none;
+  }
+
+
+
+

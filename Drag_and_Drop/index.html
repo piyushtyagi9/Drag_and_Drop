@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drag & Drop Div Elements</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<button class="add-row" onclick="addRow()">Add Row</button>
+<button class="undo" onclick="undo()">Undo</button>
+
+<table id="table">
+    <tr>
+        <td class="cell" ondrop="drop(event)" ondragover="allowDrop(event)"><div id="100" style = "background:red" class="box" draggable="true" ondragstart="drag(event)" ondragend="dragend(event)">100</div></td>
+        <td class="cell" ondrop="drop(event)" ondragover="allowDrop(event)"><div id="200" style = "background:blue" class="box" draggable="true" ondragstart="drag(event)" ondragend="dragend(event)">200</div></td>
+        <td class="cell" ondrop="drop(event)" ondragover="allowDrop(event)"><div id="300" style = "background:yellow" class="box" draggable="true" ondragstart="drag(event)" ondragend="dragend(event)">300</div></td>
+    </tr>
+    <tr>
+        <td class="cell" ondrop="drop(event)" ondragover="allowDrop(event)"><div id="400" style = "background:orange" class="box" draggable="true" ondragstart="drag(event)" ondragend="dragend(event)">400</div></td>
+        <td class="cell" ondrop="drop(event)" ondragover="allowDrop(event)"><div id="500" style = "background:green" class="box" draggable="true" ondragstart="drag(event)">500</div></td>
+        <td class="cell" ondrop="drop(event)" ondragover="allowDrop(event)"><div id="600" style = "background:violet"class="box" draggable="true" ondragstart="drag(event)">600</div></td>
+    </tr>
+    <tr>
+        <td class="cell" ondrop="drop(event)" ondragover="allowDrop(event)"><div id="700" style = "background:indigo" class="box" draggable="true" ondragstart="drag(event)" ondragend="dragend(event)">700</div></td>
+        <td class="cell" ondrop="drop(event)" ondragover="allowDrop(event)"><div id="800" style = "background:pink" class="box" draggable="true" ondragstart="drag(event)" ondragend="dragend(event)">800</div></td>
+        <td class="cell" ondrop="drop(event)" ondragover="allowDrop(event)"><div id="900" style = "background:purple" class="box" draggable="true" ondragstart="drag(event)" ondragend="dragend(event)">900</div></td>
+    </tr>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
